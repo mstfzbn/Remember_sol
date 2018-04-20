@@ -47,7 +47,7 @@ int main(int argc, const int* argv[])
 	diction.insert( make_pair(2, "second") );
 
 	//map search engine by key
-	for_each(diction.begin(), diction.end(), [=](auto /*pair<unsigned short int, string> */b) {if (b.first == 1)cout << b.second << endl; });
+	for_each(diction.begin(), diction.end(), [=](auto /*pair<unsigned short int, string> */ dictionEl) {if (dictionEl.first == 1) cout << dictionEl.second << endl; });
 
 	//error handling mechanix
 	cout << "****************** Error handling ******************\n";
@@ -61,7 +61,7 @@ int main(int argc, const int* argv[])
 	}
 	cout << "****************************************************\n";
 
-	for_each(v.begin(), v.end(), [=] (int/*works with auto*/ a) { 	if (a == 9)	{ cout << "YSOAB!!" << endl; }} );
+	for_each(v.begin(), v.end(), [=] (int/*works with auto*/ vectorEl) { 	if (vectorEl == 9)	{ cout << "YSOAB!!" << endl; }} );
 	//system ("PAUSE");	
 
 	cout << "\f \v \n";
