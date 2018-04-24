@@ -36,7 +36,7 @@ int main(int argc, const int* argv[])
 	{
 		if (el == 9)
 		{
-			printf("You son of a bitch!\n");
+			printf("Echo..\n");
 		}
 	}
 
@@ -61,7 +61,7 @@ int main(int argc, const int* argv[])
 	}
 	cout << "****************************************************\n";
 
-	for_each(v.begin(), v.end(), [=] (int/*works with auto*/ vectorEl) { 	if (vectorEl == 9)	{ cout << "YSOAB!!" << endl; }} );
+	for_each(v.begin(), v.end(), [=] (int/*works with auto*/ vectorEl) { 	if (vectorEl == 9)	{ cout << "Echo.." << endl; }} );
 	//system ("PAUSE");	
 
 	cout << "\f \v \n";
